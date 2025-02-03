@@ -13,28 +13,31 @@
     <div class="caixa-login">
         <form action="">
             <h2>Login</h2>
+            <div class="error"></div>
             <div class="caixa-input">
                 <span class="icone"><ion-icon name="mail"></ion-icon></span>
-                <input type="email" name="email" required>
+                <input type="email" name="email" id="email" >
                 <label>Email</label>
             </div>
             <div class="caixa-input">
                 <span class="icone"><ion-icon name="lock-closed"></ion-icon></span>
-                <input type="password" name="senha" required>
+                <input type="password" name="senha" id="senha" >
                 <label>Senha</label>
             </div>
             <div class="esqueceu-senha">
                 <label><input type="checkbox" name="caixa-lembrar" id="">Lembrar login</label>
                 <a href="#">Esqueceu a senha?</a>
             </div>
-            <button type="submit">Login</button>
+            <button type="submit" id="botao">Entrar</button>
             <div class="link-registro">
-                <p>Não tem uma conta? <a href="#">Registre-se</a></p>
+                <p>Não tem uma conta? <a href="registre-se.html">Registre-se</a></p>
             </div>
         </form>
     </div>
+    
 </section>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
