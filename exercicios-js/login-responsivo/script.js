@@ -16,7 +16,7 @@ botao.addEventListener('click', function entrar(event){
         }, 5000);
         return
     } else {
-        error.textContent = `Bem-vindo, R${emailValor}!`
+        error.textContent = `Bem-vindo, ${emailValor}!`
         error.style.display = "block"
         setTimeout(() => {
             error.textContent = ''
