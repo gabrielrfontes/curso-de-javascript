@@ -134,3 +134,20 @@ a:hover {
     text-decoration: underline;
     color: blue;
 }
+
+@media (max-width: 360px) {
+    .caixa-info {
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+
+    .caixa-cadastro {
+        width: 290px;
+    }
+}
