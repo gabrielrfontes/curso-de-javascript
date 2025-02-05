@@ -15,8 +15,8 @@ section {
     background: url('fundo-wave.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-    animation: animateBg 5s linear infinite;
-    -webkit-animation: animateBg 5s linear infinite;
+    animation: animateBg 10s linear infinite;
+    -webkit-animation: animateBg 10s linear infinite;
     position: relative;
 }
 

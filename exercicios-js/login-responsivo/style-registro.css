@@ -13,6 +13,19 @@ body {
     height: 100vh;
     background: black;
     color: white;
+    background: url(fundo-registro.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: animateBg 10s linear infinite;
+    -webkit-animation: animateBg 10s linear infinite;
+    position: relative;
+}
+
+@keyframes animateBg {
+    100% {
+        filter: hue-rotate(360deg);
+        -webkit-filter: hue-rotate(360deg);
+}
 }
 
 section {
@@ -20,12 +33,14 @@ section {
     align-items: center;
     justify-content: center;
     display: flexbox;
-    
+   
 }
 
+
+
 .caixa-info {
-    width: 400px;
-    height: 350px;
+    width: 450px;
+    height: 400px;
     justify-content: center;
     align-items: center;
     margin-bottom: 0px;
@@ -38,44 +53,84 @@ section {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+    font-size: 1em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
 }
 
 h2 {
     text-align: center;
     font-size: 2em;
     padding: 10px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.caixa-info {
-    font-size: 1em;
-    position: relative;
-}
 
 section input {
     color: #fff;
     margin: 5px 0 20px 30px;
     padding: 10px;
-    height: 30px;
+    height: 45px;
     background: transparent;
     border: none;
     outline: none;
     align-items: center;
     justify-content: center;
     border-bottom: 2px solid #fff;
+    text-align: center;
 }
 
 input#nome, input#email, input#senha {
     display: block;
-    margin: 0px 0 10px 0;
-    width: 200px;
+    position: relative;
+    margin: auto;
+    width: 100%;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
 }
+
 
 li {
-    text-align: left;
+    text-align: center;
     margin-bottom: 20px;
+    list-style: none;
 }
 
+.caixa-cadastro li {
+    align-items: right;
+    justify-content: right;
+}
 
+input[type="checkbox"] {
+    position: relative;
+    margin: 0 10px 0 0;
+    text-align: right;
+    align-items: right;
+    margin-left: 150px;
+    display: inline-block;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+}
