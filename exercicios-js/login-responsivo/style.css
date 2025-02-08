@@ -155,6 +155,10 @@ button {
     font-weight: 500;
 }
 
+button:hover {
+    background: rgba(90, 156, 236, 0.973);;
+}
+
 .link-registro {
     font-size: .9em;
     color: #fff;
