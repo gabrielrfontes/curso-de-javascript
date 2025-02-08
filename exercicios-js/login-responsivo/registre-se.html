@@ -10,12 +10,21 @@
     </head>
 
 <body>
+
+   <header>
+    <nav>
+        <div id="voltar">
+            <h1><a id="voltarB" href="index.html"><</a></h1><div id="txt">Voltar ao início</div>
+        </div>
+    </nav>
+   </header>
+
     <section>
         <h2>Cadastre-se</h2>
         <div class="caixa-info">
             <ul>
                 <li>
-                    <input type="text" name="nome" id="nome" required>
+                    <input type="text" name="nome" id="nome" required autocomplete="off">
                     <label for="">Nome completo</label>
                 </li>
                 <li>
@@ -27,11 +36,11 @@
                     <label for="">Não declarar</label>
                 </li>
                 <li>
-                    <input type="text" name="email" id="email" required>
+                    <input type="text" name="email" id="email" required autocomplete="off">
                     <label for="">E-mail</label>
                 </li>
                 <li>
-                    <input type="password" name="senha" id="senha" required>
+                    <input type="password" name="senha" id="senha" required autocomplete="off">
                     <label for="">Senha</label>
                 </li>
             </ul>
@@ -40,7 +49,7 @@
             <ul>
                 <li>
                     <input type="checkbox" name="aceito" id="aceito">
-                    <label for="">Aceito os <a href="#">Termos e Condições</a></label required>
+                    <label for="">Aceito os <a id="termos" href="#">Termos e Condições</a></label required>
                 </li>
                 <li>
                     <button type="submit">Cadastrar-se</button>

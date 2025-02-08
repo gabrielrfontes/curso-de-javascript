@@ -16,16 +16,6 @@ body {
     background: url(fundo-registro.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    animation: animateBg 10s linear infinite;
-    -webkit-animation: animateBg 10s linear infinite;
-    position: relative;
-}
-
-@keyframes animateBg {
-    100% {
-        filter: hue-rotate(360deg);
-        -webkit-filter: hue-rotate(360deg);
-}
 }
 
 section {
@@ -33,22 +23,53 @@ section {
     align-items: center;
     justify-content: center;
     display: flexbox;
-   
 }
 
+#voltarB {
+    color: white;
+    text-decoration: none;
+}
 
+nav {
+    position: absolute;
+    float: left;
+    margin-left: -100px;
+    margin-top: -230px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: lighter;
+}
+
+nav:hover {
+    cursor: pointer;
+    color: white;
+}
+
+#txt {
+    text-align: left;
+    display: none;
+    margin-left: -27px;
+    font-size: .8em;
+}
+
+#voltar:hover #txt { /*Faz com que quando passe o mouse em cima, mostre o texto*/
+    display: block;
+}
 
 .caixa-info {
     width: 450px;
     height: 400px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0px;
+    margin-bottom: 40px;
     box-sizing: content-box;
     border: 2px solid rgb(259, 259, 259, .5);
-    border-radius: 20px;
     margin: 10px 0;
-    padding: 10px;
+    margin-bottom: -10px;
+    padding: 0px;
+    border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
@@ -58,6 +79,7 @@ section {
     display: flex;
     flex-direction: column;
     backdrop-filter: blur(15px);
+    padding-top: 15px;
 }
 
 h2 {
@@ -82,6 +104,11 @@ section input {
     text-align: center;
 }
 
+
+input[type = "radio"] {
+    cursor: pointer;
+}
+
 input#nome, input#email, input#senha {
     display: block;
     position: relative;
@@ -90,6 +117,7 @@ input#nome, input#email, input#senha {
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
+    padding: -50px;
 }
 
 
@@ -99,23 +127,46 @@ li {
     list-style: none;
 }
 
+.caixa-cadastro {
+    margin-top: -30px;
+}
+
 .caixa-cadastro li {
-    align-items: right;
-    justify-content: right;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin-top: 50px;
+}
+
+#aceito {
+    margin-right: 10px;
+    align-self: center;
 }
 
 input[type="checkbox"] {
     position: relative;
-    margin: 0 10px 0 0;
-    text-align: right;
-    align-items: right;
-    margin-left: 150px;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    display: inline-flex;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+label {
     display: inline-block;
+    margin-left: 5px;
+    text-align: center;
+    align-self: center;
 }
 
 button {
     width: 200px;
     height: 50px;
+    margin: -50px auto 0;
+    padding: 0;
+    position: relative;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -123,14 +174,21 @@ button {
     -o-border-radius: 20px;
     font-weight: 600;
     font-size: 1em;
+    display: block;
+    cursor: pointer;
 }
 
-a {
+button:hover {
+    background: rgba(90, 156, 236, 0.973);
+}
+    
+
+#termos{
     text-decoration: none;
     color: white;
 }
 
-a:hover {
+#termos:hover {
     text-decoration: underline;
     color: blue;
 }
