@@ -4,7 +4,7 @@ const error = document.querySelector('.error')
 const botao = document.querySelector('#botao')
 
 
-botao.addEventListener('click', function entrar(event){
+botao.addEventListener('click', function entrar(event) {
     event.preventDefault()
     const emailValor = email.value
 
