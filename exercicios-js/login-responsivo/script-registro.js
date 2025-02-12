@@ -4,12 +4,8 @@ const email = document.querySelector('#email')
 const senha = document.querySelector('#senha')
 const botao = document.querySelector('#botao')
 const error = document.querySelector('.error')
-var checagem = function checar(n) {
+const aceito = document.querySelector("#aceito")
 
-    if (document.getElementById("#aceito").checked) {
-        return n = 1   
-    } else {return n = 0}
-}
 
 botao.addEventListener('click', function registrar(event) {
     event.preventDefault()
@@ -19,7 +15,7 @@ botao.addEventListener('click', function registrar(event) {
     const valorSenha = senha.value
 
 
-    if(!valorNome || (!valorEmail.includes('@' + ".")) || (!valorSenha) || checagem === 0) {
+    if(!valorNome || (!valorEmail.includes('@' + ".")) || (!valorSenha) || aceito.checked === false) {
         error.textContent = "Preencha os campos corretamente"
         error.style.color= "red"
         setTimeout(() => {
