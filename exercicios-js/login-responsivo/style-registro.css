@@ -16,6 +16,16 @@ body {
     background: url(fundo-registro.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    animation: animateBg 10s linear infinite;
+    -webkit-animation: animateBg 10s linear infinite;
+    position: relative;
+}
+
+@keyframes animateBg {
+    100% {
+        filter: hue-rotate(360deg);
+        -webkit-filter: hue-rotate(360deg);
+}
 }
 
 section {
@@ -23,7 +33,9 @@ section {
     align-items: center;
     justify-content: center;
     display: flexbox;
+   
 }
+
 
 #voltarB {
     color: white;

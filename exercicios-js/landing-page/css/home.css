@@ -82,7 +82,7 @@
     z-index: 1;
 }
 
-@media screen and (max-width: 1170px) { /*Responsividade para ajuste para telas menores*/
+@media screen and (max-width: 1170px) { /*Responsividade para ajuste de telas menores que 1170px*/
     #home {
         min-height: 100%;
         padding-top: 0px;
@@ -96,6 +96,11 @@
 
     #cta {
         width: 100%;
+        text-align: center;
         align-items: center;
     }
+}
+
+@media screen and (max-width: 450px) { /*Responsividade para ajuste de telas menores que 450px*/
+   
 }
