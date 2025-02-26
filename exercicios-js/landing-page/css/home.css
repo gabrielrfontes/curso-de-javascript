@@ -71,8 +71,8 @@
     background-color: #ffe8b4;
     width: 50%;
     height: 100%;
-    position: absolute;
-    /*Cria a forma*/border-radius: 40% 30% 50% 20%; /*Da o formato*/
+    position: absolute;/*Cria a forma*/
+    border-radius: 40% 30% 50% 20%; /*Da o formato*/
     -webkit-border-radius: 4;
     -moz-border-radius: 4;
     -ms-border-radius: 4;
@@ -80,4 +80,22 @@
     top: 0;
     right: 5px;
     z-index: 1;
+}
+
+@media screen and (max-width: 1170px) { /*Responsividade para ajuste para telas menores*/
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+    }
+
+    #banner,
+    #banner img, 
+    #home .shape {
+        display: none;
+    }
+
+    #cta {
+        width: 100%;
+        align-items: center;
+    }
 }
