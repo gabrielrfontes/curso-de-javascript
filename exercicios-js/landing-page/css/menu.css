@@ -4,6 +4,7 @@
     text-align: center;
     justify-content: center;
     min-height: 100vh;
+    margin-bottom: 0px;
 }
 
 #pratos {
@@ -64,4 +65,22 @@
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+@media screen and (max-width: 1170px) {
+    #pratos {
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    .prato {
+        width: calc(49% - 12px);
+    }
+}
+
+@media screen and (max-width: 607px) {
+    .prato {
+        width: 100%;
+    }
 }

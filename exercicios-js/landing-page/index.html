@@ -6,29 +6,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Landing page</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/home.css">
-    <link rel="stylesheet" href="/css/menu.css">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <header>
         <nav id="navbar">
-            <i class="fa-solid fa-burger" id="nav-logo"> FOOD</i>
+           <a href=""><i class="fa-solid fa-burger" id="nav-logo"> FOOD</i></a>
 
             <ul id="nav-list">
                 <li class="nav-item active">
-                    <a href="#home">Início</a>
+                    <a href="">Início</a>
                 </li>
                 <li class="nav-item">
                     <a href="#menu">Caradápio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#aval">Avaliações</a>
+                    <a href="#depoimentos">Avaliações</a>
                 </li>
             </ul>
-            <button class="btn-default">
+            <button class="btn-default" id="btn-pedido">
                 Peça Aqui
             </button>
             <button id="mobile-btn">
@@ -39,7 +35,7 @@
         <div id="mobile-menu">
             <ul id="mobile-nav-list">
                 <li class="nav-item">
-                    <a href="#home">Início</a>
+                    <a href="">Início</a>
                 </li>
                 <li class="nav-item">
                     <a href="#menu">Caradápio</a>
@@ -223,7 +219,85 @@
             </div>
 
         </section>
+
+        <section id="depoimentos">
+            <img src="imagens/chef.png" class="chef-img" alt="">
+
+            <div id="depo-content">
+                <h2 class="section-titulo">Depoimentos</h2>
+
+                <h3 class="section-subtitulo">O que os clientes falam sobre nós</h3>
+                <div id="feedbacks">
+
+                    <div class="feedback">
+                        <img src="/imagens/avatar.png" class="depo-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                <strong>Fulana de Tal</strong>
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse tempore magni magnam ipsam quo doloribus perspiciatis at assumenda, deleniti vitae odio commodi nostrum ducimus sequi blanditiis quos voluptatem et ad."</p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="/imagens/avatar.png" class="depo-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                               <strong>Ciclana de Tal</strong>
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse tempore magni magnam ipsam quo doloribus perspiciatis at assumenda, deleniti vitae odio commodi nostrum ducimus sequi blanditiis quos voluptatem et ad."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-default">
+                    Ver  mais avaliações
+                </button>
+
+            </div>
+
+        </section>
     </main>
+
+    <footer>
+        <img src="/imagens/wave (1).svg" alt="">
+
+        <div id="footer-itens">
+            <span id="copyright"> &copy; 2025 Gabriel Fontes</span>
+
+            <div class="social-media-btns">
+
+                <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
     <script src="/javascript/script.js"></script>
 </body>
 </html>
