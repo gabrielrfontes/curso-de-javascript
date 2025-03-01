@@ -4,7 +4,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 3;
-    background-color: #fffcf5;
+    background-color: var(--cor-primaria-1);
 
 }
 
@@ -18,7 +18,7 @@ header {
 
 #nav-logo {
     font-size: 24px;
-    color: #e9a209;
+    color: var(--cor-primaria-4);
 }
 
 #nav-list {
@@ -34,8 +34,8 @@ header {
 }
 
 .nav-item.active a {
-    color: #1d1d1d;
-    border-bottom: 3px solid #ffe100;
+    color: var(--cor-neutra-1);
+    border-bottom: 3px solid var(--cor-primaria-3);
 }
 
 #mobile-btn {

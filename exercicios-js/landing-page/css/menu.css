@@ -35,7 +35,7 @@
 
 .heart {
     position: absolute;
-    background-color: #e9a209;
+    background-color: var(--cor-primaria-4);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,7 +58,7 @@
 }
 
 .aval-prato i{
-    color: #e9a209
+    color: var(--cor-primaria-4)
 }
 
 .preco-prato {

@@ -15,11 +15,11 @@
 
 #cta .title {
     font-size: 4rem;
-    color: #1d1d1d;
+    color: var(--cor-neutra-1);
 }
 
 #cta .title span {
-    color: #e9a209;
+    color: var(--cor-primaria-4);
 }
 
 #cta .description {
@@ -33,7 +33,7 @@
 
 #cta-btns a {
     text-decoration: none;
-    color: #1d1d1d;
+    color: var(--cor-neutra-1);
 }
 
 #phone-btn {
@@ -69,7 +69,7 @@
 }
 
 .shape {
-    background-color: #ffe8b4;
+    background-color: var(--cor-primaria-2);
     width: 50%;
     height: 100%;
     position: absolute;/*Cria a forma*/
